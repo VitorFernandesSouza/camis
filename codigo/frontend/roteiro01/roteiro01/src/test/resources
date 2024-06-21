@@ -1,0 +1,17 @@
+# Nome da aplica��o
+spring.application.name=roteiro01-test
+
+# Configura��es do servidor
+server.servlet.context-path=/api
+
+# Configura��es do banco de dados em mem�ria H2 para testes
+spring.datasource.url=jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+spring.datasource.driverClassName=org.h2.Driver
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.H2Dialect
+spring.h2.console.enabled=true
+spring.h2.console.path=/h2-ui
+
+# Configura��es do JPA/Hibernate
+spring.jpa.show-sql=true
+spring.jpa.hibernate.ddl-auto=create-drop
+spring.jpa.open-in-view=false
